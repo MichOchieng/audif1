@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-
+  :root {
+    background: #1E1E1E
+  }
 }
 
 @layer utilities {
@@ -18,6 +20,39 @@
   }
 }
 
-@layer components {
+@font-face {
+  font-family: "Formula-Regular";
+  src: url('../public/fonts/Formula1/Formula1-Regular_web_0.ttf');
+}
 
+@font-face {
+  font-family: "Formula-Bold";
+  src: url('../public/fonts/Formula1/Formula1-Bold_web_0.ttf');
+}
+
+@font-face {
+  font-family: "Formula-Wide";
+  src: url('../public/fonts/Formula1/Formula1-Wide_web_0.ttf');
+}
+
+@layer components {
+  .card {
+    @apply
+    flex flex-col items-center justify-between w-full h-96 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl p-5
+    text-white 
+  }
+
+  .card-h1 {
+    @apply
+    text-white font-formulaWide
+  }
+  .card-h2 {
+    @apply
+    text-white font-formulaRegular
+  }
+
+  .button {
+    @apply
+    font-formulaRegular min-w-fit w-28 h-10 md:w-32 md:h-14 md:text-2xl rounded-xl hover:scale-105 bg-[#1E1E1E] text-white text-lg px-5 text-center transition-all duration-500 hover:drop-shadow-md overflow-hidden flex items-center justify-center
+  }
 }
