@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+export interface ButtonProps {
+  text: string,
+}
+
+const Button = ( props:ButtonProps ) => {
   return (
-    <div>Button</div>
+    <button className='button'>{props.text}</button>
   )
 }
 
