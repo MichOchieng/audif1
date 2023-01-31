@@ -48,11 +48,11 @@
   }
   .card-h2 {
     @apply
-    text-white font-formulaRegular
+    text-white font-formulaRegular w-1/2
   }
 
   .button {
     @apply
-    font-formulaRegular min-w-fit w-28 h-10 md:w-32 md:h-14 md:text-2xl rounded-xl hover:scale-105 bg-[#1E1E1E] text-white text-lg px-5 text-center transition-all duration-500 hover:drop-shadow-md overflow-hidden flex items-center justify-center
+    font-formulaRegular min-w-fit w-28 h-10 md:w-36 md:h-14 md:text-2xl rounded-xl hover:scale-105 bg-[#1E1E1E] text-white text-lg px-5 text-center transition-all duration-500 overflow-hidden flex items-center justify-center
   }
 }
