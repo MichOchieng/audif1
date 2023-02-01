@@ -1,22 +1,29 @@
 import React from 'react'
 import Image from 'next/image'
-import img from '../public/carImgs/main.jpg'
+import img from '../public/carImgs/heroImg.jpg'
 import logo from '../public/audiLogo.png'
+import { BiChevronDown } from 'react-icons/bi'
 const Hero = () => {
     return (
-        <div className='relative flex flex-col items-center justify-center'>
+        <div className='relative flex flex-col items-center justify-center bg-black'>
             {/* Bg img */}
-            <div className='h-screen min-h-[800px] w-[400px] flex z-0'>
+            <div className='h-screen flex z-0'>
                 <Image
-                    className='object-cover'
+                    className='object-cover h-[900px]'
                     src={img}
                     alt='bg'
                 />
             </div>
             {/* Header */}
-            <div className='absolute flex flex-col items-center justify-center top-0 border w-full h-72 z-10'>
-                <Image className='h-24 w-44' src={logo} alt='logo'/>
-                <h1 className="">Audi Enters Formula 1</h1>
+            <div className='absolute flex flex-col items-start justify-center top-0 w-full h-28 z-10 md:h-36'>
+                <Image className='h-14 w-24 mx-5 md:h-24 md:w-44' src={logo} alt='logo'/>
+                <h1 className="mx-6 text-sm text-white font-formulaRegular md:text-lg md:mx-8">2026 Audi F1</h1>
+            </div>
+            {/* Swipe arrows */}
+            <div className='absolute animate-bounce bottom-0 z-10 text-[50px] text-white/60 md:bottom-52'>
+                <BiChevronDown className='animate-pulse -my-4'/>
+                <BiChevronDown className='animate-pulse -my-10'/>
+                <BiChevronDown className='animate-pulse -my-2'/>
             </div>
         </div>
     )

@@ -44,7 +44,7 @@
   .card {
     @apply
     flex flex-col items-center justify-between w-full h-[460px] border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl p-5
-    text-white overflow-hidden
+    text-white overflow-hidden md:h-[660px]
   }
 
   .card-h1 {
@@ -53,7 +53,7 @@
   }
   .card-h2 {
     @apply
-    text-white font-formulaRegular  text-lg
+    text-white font-formulaRegular md:w-1/3 text-lg
   }
 
   .button {

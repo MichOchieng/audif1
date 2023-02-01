@@ -51,7 +51,7 @@ const Card = (props: CardProps) => {
                 <FadeRight><h1 className="card-h1">{props.h1}</h1></FadeRight>
                 <OpenDown><h2 className="card-h2">{props.h2}</h2></OpenDown>
             </div>
-            <div className="z-10 pb-3">
+            <div className="z-10 pb-3 md:pb-16">
                 <Button text='Details' />
             </div>
         </div>
