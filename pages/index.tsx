@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Card, Hero } from '@/components'
+import { Card, Footer, Hero } from '@/components'
 import cardData from '@/components/cardData'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import logo from '../public/audiLogo.png'
 
 export default function Home() {
   return (
@@ -27,9 +26,7 @@ export default function Home() {
           </ParallaxLayer>
           <ParallaxLayer sticky={{ start: 2.08, end: 2.5 }} speed={0.5} >
             <Card h1={cardData[2].h1} h2={cardData[2].h2} bg={cardData[2].bg} />
-            <div className='h-[360px] -mt-5 bg-[#161616] rounded-b-3xl relative flex flex-row items-end justify-center'>
-            <Image className='bottom-0 h-24 w-44' src={logo} alt='logo'/>
-            </div>
+            <Footer/>
           </ParallaxLayer>
         </Parallax>
       </main>
