@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    background: #1E1E1E
+    background: #161616
   }
 }
 
@@ -44,7 +44,7 @@
   .card {
     @apply
     flex flex-col items-center justify-between w-full h-[460px] border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl p-5
-    text-white overflow-hidden md:h-[660px]
+    text-white overflow-hidden md:h-[660px] z-10
   }
 
   .card-h1 {
@@ -58,6 +58,6 @@
 
   .button {
     @apply
-    font-formulaRegular min-w-fit w-28 h-10 md:w-36 md:h-14 md:text-2xl rounded-xl hover:scale-105 bg-[#1E1E1E] text-white text-lg px-5 text-center transition-all duration-500 overflow-hidden flex items-center justify-center
+    font-formulaRegular min-w-fit w-28 h-10 md:w-36 md:h-14 md:text-2xl rounded-xl hover:scale-105 bg-[#1E1E1E] text-white text-lg px-5 text-center transition-all duration-500 overflow-hidden flex items-center justify-center drop-shadow-lg
   }
 }
