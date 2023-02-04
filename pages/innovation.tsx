@@ -7,8 +7,9 @@ import headerImg from '../public/carImgs/card0.jpg'
 import tileImg from '../public/carImgs/A224479_large.jpg'
 import Head from 'next/head'
 import mosaicData from '@/components/mosaicData'
+import { InView } from 'react-intersection-observer'
 
-export default function Innovation () {
+export default function Innovation() {
     return (
         <>
             <Head>
@@ -31,6 +32,15 @@ export default function Innovation () {
                         src={headerImg}
                         alt='bg'
                     />
+                    <InView threshold={0} triggerOnce>
+                        {({ inView, ref }) => (
+                            <div ref={ref} className={`bg-black/30 absolute top-0 h-full w-full flex items-center justify-center ${inView ? 'opacity-100' : 'opacity-0'} transition-all delay-100 duration-1000`}>
+                                <div className={`overflow-hidden relative h-10 w-full flex items-center justify-center`}>
+                                    <h1 className={`font-formulaWide absolute ${inView ? 'mt-0' : 'mt-14'} delay-500 duration-1000`}>Innovation</h1>
+                                </div>
+                            </div>
+                        )}
+                    </InView>
                 </div>
                 {/* header */}
                 <div className="p-5 text-center">
@@ -57,9 +67,9 @@ export default function Innovation () {
                     {/* Mosaic */}
                     <div className='grid grid-flow-row-dense drop-shadow-md'>
                         {
-                            mosaicData.map((img,i) => (
+                            mosaicData.map((img, i) => (
                                 <div key={i} className='h-72 w-80 flex items-center'>
-                                    <Image className='object-cover' src={img.bg} alt={'img'}/>
+                                    <Image className='object-cover' src={img.bg} alt={'img'} />
                                 </div>
                             ))
                         }
