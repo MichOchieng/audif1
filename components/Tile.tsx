@@ -1,8 +1,19 @@
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
-const Tile = () => {
+interface TileProps {
+  img: StaticImageData
+}
+
+const Tile = (props: TileProps) => {
   return (
-    <div>Tile</div>
+    <div className='tile'>
+      <Image
+        className='object-cover h-full z-0'
+        src={props.img}
+        alt='bg'
+      />
+    </div>
   )
 }
 
