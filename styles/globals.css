@@ -6,6 +6,9 @@
   :root {
     background: #161616
   }
+  html{
+    color: white
+  }
 }
 
 @layer utilities {
@@ -44,7 +47,13 @@
   .card {
     @apply
     flex flex-col items-center justify-between w-full h-[460px] border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl p-5
-    text-white overflow-hidden md:h-[660px] z-10
+    text-white overflow-hidden md:h-[660px] z-10 smoothed
+  }
+
+  .card-active{
+    @apply
+    flex flex-col items-center justify-between w-full h-screen p-5
+    text-white overflow-hidden z-20 smoothed absolute top-0 border
   }
 
   .card-h1 {
@@ -54,6 +63,17 @@
   .card-h2 {
     @apply
     text-white font-formulaRegular md:w-1/3 text-lg
+  }
+
+  .tile {
+    @apply
+    flex flex-col items-center justify-center w-full h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl
+    text-white overflow-hidden md:h-[660px] z-10 smoothed
+  }
+
+  .page-container{
+    @apply
+    flex flex-col w-full h-full min-h-fit mx-auto items-center justify-center md:w-5/6 lg:w-4/6 max-w-[1220px]
   }
 
   .button {
