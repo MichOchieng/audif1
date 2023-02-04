@@ -32,7 +32,7 @@ export default function Innovation() {
                         src={headerImg}
                         alt='bg'
                     />
-                    <InView threshold={0} >
+                    <InView threshold={0} triggerOnce>
                         {({ inView, ref }) => (
                             <div ref={ref} className={`bg-black/30 absolute top-0 h-full w-full flex items-center justify-center ${inView ? 'opacity-100' : 'opacity-0'} transition-all delay-100 duration-1000`}>
                                 <div className={`overflow-hidden relative h-10 w-full flex items-center justify-center`}>
@@ -47,13 +47,13 @@ export default function Innovation() {
                     <h1 className="font-formulaWide md:text-xl">Actively Shaping Formula 1&apos;s Transformation</h1>
                 </div>
                 {/* Block 1 */}
-                <div className="flex flex-col items-center md:flex-row w-full p-5 my-3">
+                <div className="flex flex-col items-center md:flex-row w-full p-5">
                     {/* Tile */}
                     <Tile img={tileImg} />
                     {/* Text */}
-                    <InView threshold={0.25} >
+                    <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="mx-auto my-5 md:w-1/2 md:h-96 h-72 overflow-hidden relative">
+                            <div ref={ref} className="mx-auto w-full my-5 md:w-1/2 md:h-96 h-60 overflow-hidden relative">
                                 <p className={`font-formulaRegular w-full md:text-lg whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     In view of the major technological leaps that the series is making towards sustainability in 2026, we can speak of a new Formula 1. Formula 1 is transforming, and Audi wants to actively support this journey. A close link between our Formula 1 project and AUDI AG&apos;s Technical Development department will enable synergies.
                                 </p>
@@ -62,20 +62,20 @@ export default function Innovation() {
                     </InView>
                 </div>
                 {/* block 2 */}
-                <div className="my-3 p-5">
+                <div className="p-5">
                     {/* Text */}
                     <p className="font-formulaRegular">
                         From 2026, the electric power output for the power units, consisting of an electric motor, battery, control electronics, and a combustion engine, will increase sharply compared to today&apos;s Formula 1 drive systems. The electric motor will then be nearly as powerful as the combustion engine, which has an output of about 400 kW (544 hp). The highly efficient 1.6-liter turbo engines run on advanced sustainable fuel, also a prerequisite for Audi&apos;s entry into the series.
                     </p>
                 </div>
                 {/* block 3 */}
-                <div className="p-4 my-3 bg-[#1E1E1E] rounded-md">
+                <div className="p-4 md:p-10 mx-2 my-3 bg-[#1E1E1E] rounded-md">
                     {/* Mosaic */}
-                    <div className='grid grid-flow-row-dense drop-shadow-md'>
+                    <div className='h-fit grid gap-10 md:grid-cols-3 drop-shadow-md'>
                         {
                             mosaicData.map((img, i) => (
-                                <div key={i} className='h-72 w-80 flex items-center'>
-                                    <Image className='object-cover' src={img.bg} alt={'img'} />
+                                <div key={i} className={`overflow-hidden flex items-center ${i === 0 && 'col-span-2'}`}>
+                                    <Image className={`object-cover ${i === 1 && 'h-full'}`} src={img.bg} alt={'img'} />
                                 </div>
                             ))
                         }
