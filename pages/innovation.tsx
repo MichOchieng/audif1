@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import Image from 'next/image'
 import React from 'react'
 import { Tile } from '@/components'
