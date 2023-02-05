@@ -13,9 +13,9 @@ export default function Sustainability() {
         <>
             <Head>
                 <title>Audi F1 - Sustainability</title>
-                <meta name="description" content="Sauber to become Audi works F1 team from 2026" />
+                <meta name="description" content="Audi is tackling its most challenging ambition to date: combining sustainability, innovation, and maximum performance in motorsports." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon/android-chrome-512x512.png" />
                 <link rel="android-chrome" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
                 <link rel="android-chrome" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -49,21 +49,24 @@ export default function Sustainability() {
                     <h1 className="font-formulaWide md:text-xl lg:text-3xl md:my-5">Motorsport is an integral part of Audi&apos;s DNA</h1>
                 </div>
                 {/* Block 1 */}
-                <div className="flex flex-col items-center md:flex-row w-full p-5">
+                <div className="flex flex-col items-center lg:flex-row-reverse w-full p-5 md:p-0 lg:mb-24 ">
                     {/* Tile */}
-                    <div className='flex flex-col items-center justify-center w-full md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed bg-black'>
-                            <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/audif1.mp4"/>
+                    <div className='flex flex-col items-center justify-center w-full lg:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed lg:ml-5'>
+                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/audif1.mp4"/>
                     </div>
-
-                </div>
-                {/* block 2 */}
-                <div className="p-5">
                     {/* Text */}
-                    <p className="font-formulaRegular md:text-center p-text md:my-5">
-                        The key to getting involved is the world&apos;s most popular racing series is the clear plan to become more sustainable and cost-efficient. The new technical rules, which will apply from 2026, focus on greater electrification and advanced sustainable fuel. In addition to the existing cap on costs for teams, a cost cap for power unit manufacturers will be introduced in 2023. In addition, Formula 1 has set itself the ambitious goal of being a carbon-neutral racing series by 2030.
-                    </p>
+                    <InView threshold={0.25} triggerOnce>
+                        {({ inView, ref }) => (
+                            <div ref={ref} className="flex items-center mx-auto w-full lg:w-1/2 md:h-80 h-96 overflow-hidden relative">
+                                <p className={`font-formulaRegular w-full p-text md:text-lg md:text-center lg:text-start whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                                The key to getting involved is the world&apos;s most popular racing series is the clear plan to become more sustainable and cost-efficient. The new technical rules, which will apply from 2026, focus on greater electrification and advanced sustainable fuel. In addition to the existing cap on costs for teams, a cost cap for power unit manufacturers will be introduced in 2023. In addition, Formula 1 has set itself the ambitious goal of being a carbon-neutral racing series by 2030.
+                                </p>
+                            </div>
+                        )}
+                    </InView>
                 </div>
-                {/* block 3 */}
+
+                {/* block 2 */}
                 <div className="flex flex-col items-center md:flex-row w-full p-5">
                     {/* Tile */}
                     <Tile img={rearImg} />

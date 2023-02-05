@@ -5,6 +5,7 @@ import logo from '../public/audiLogo.png'
 import headerImg from '../public/carImgs/card0.jpg'
 import tileImg from '../public/carImgs/A224479_large.jpg'
 import Head from 'next/head'
+import Link from 'next/link'
 import mosaicData from '@/components/mosaicData'
 import { InView } from 'react-intersection-observer'
 
@@ -13,9 +14,9 @@ export default function Innovation() {
         <>
             <Head>
                 <title>Audi F1 - Innovation</title>
-                <meta name="description" content="Sauber to become Audi works F1 team from 2026" />
+                <meta name="description" content="Actively Shaping Formula 1s Transformation" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon/android-chrome-512x512.png" />
                 <link rel="android-chrome" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
                 <link rel="android-chrome" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -40,10 +41,13 @@ export default function Innovation() {
                             </div>
                         )}
                     </InView>
+                    <Link className='absolute m-2 md:m-5 hover:scale-105 smoothed top-0 left-0 h-10 w-24 md:h-16 md:w-32 flex items-center' href={'/'}>
+                        <Image className='object-contain' src={logo} alt='logo' />
+                    </Link>
                 </div>
                 {/* header */}
                 <div className="p-5 text-center md:my-5">
-                    <h1 className="font-formulaWide md:text-xl">Actively Shaping Formula 1&apos;s Transformation</h1>
+                    <h1 className="font-formulaWide md:text-xl lg:text-3xl md:my-5">Actively Shaping Formula 1&apos;s Transformation</h1>
                 </div>
                 {/* Block 1 */}
                 <div className="flex flex-col items-center md:flex-row w-full p-5">
@@ -52,8 +56,8 @@ export default function Innovation() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="mx-auto w-full my-5 md:w-1/2 md:h-96 h-60 overflow-hidden relative">
-                                <p className={`font-formulaRegular w-full md:text-lg whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-60 overflow-hidden relative">
+                                <p className={`font-formulaRegular w-full p-text md:text-lg whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     In view of the major technological leaps that the series is making towards sustainability in 2026, we can speak of a new Formula 1. Formula 1 is transforming, and Audi wants to actively support this journey. A close link between our Formula 1 project and AUDI AG&apos;s Technical Development department will enable synergies.
                                 </p>
                             </div>
@@ -63,7 +67,7 @@ export default function Innovation() {
                 {/* block 2 */}
                 <div className="p-5">
                     {/* Text */}
-                    <p className="font-formulaRegular">
+                    <p className="font-formulaRegular p-text md:text-center md:my-5">
                         From 2026, the electric power output for the power units, consisting of an electric motor, battery, control electronics, and a combustion engine, will increase sharply compared to today&apos;s Formula 1 drive systems. The electric motor will then be nearly as powerful as the combustion engine, which has an output of about 400 kW (544 hp). The highly efficient 1.6-liter turbo engines run on advanced sustainable fuel, also a prerequisite for Audi&apos;s entry into the series.
                     </p>
                 </div>
@@ -74,7 +78,7 @@ export default function Innovation() {
                         {
                             mosaicData.map((img, i) => (
                                 <div key={i} className={`overflow-hidden flex items-center ${i === 0 && 'col-span-2'}`}>
-                                    <Image className={`object-cover ${i === 1 && 'h-full'}`} src={img.bg} alt={'img'} />
+                                    <Image className={`object-cover hover:scale-105 smoothed ${i === 1 && 'h-full'}`} src={img.bg} alt={'img'} />
                                 </div>
                             ))
                         }

@@ -13,9 +13,9 @@ export default function Performance() {
         <>
             <Head>
                 <title>Audi F1 - Performance</title>
-                <meta name="description" content="Sauber to become Audi works F1 team from 2026" />
+                <meta name="description" content="The power unit will be developed at the Neuburg an der Donau site. In the future, the Formula 1 program will spearhead the factorys motorsports activities." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon/android-chrome-512x512.png" />
                 <link rel="android-chrome" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
                 <link rel="android-chrome" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
