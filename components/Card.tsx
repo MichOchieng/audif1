@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { Button } from '.'
 import { InView } from 'react-intersection-observer'
@@ -6,7 +7,8 @@ import { InView } from 'react-intersection-observer'
 interface CardProps {
     h1: string,
     h2: string,
-    bg: StaticImageData
+    bg: StaticImageData,
+    link: string
 }
 
 interface FadeProps {
@@ -51,8 +53,8 @@ const Card = (props: CardProps) => {
                 <FadeRight><h1 className="card-h1">{props.h1}</h1></FadeRight>
                 <OpenDown><h2 className="card-h2">{props.h2}</h2></OpenDown>
             </div>
-            <div className="z-10 pb-3 md:pb-16">
-                <Button text='Details' />
+            <div className="z-10 pb-3">
+                <Link href={props.link}><Button text='Details' /></Link>
             </div>
         </div>
     )
