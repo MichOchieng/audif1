@@ -68,7 +68,7 @@
   .tile {
     @apply
     flex flex-col items-center justify-center w-full md:w-72 md:h-96 lg:w-[500px] lg:h-[440px] h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl
-    text-white overflow-hidden z-10 smoothed
+    text-white overflow-hidden z-10 smoothed bg-black
   }
 
   .page-container{
