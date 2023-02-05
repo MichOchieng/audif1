@@ -20,7 +20,7 @@ const FadeRight = ({children}: FadeProps) => (
         {({ inView, ref }) => (
             <div
                 ref={ref}
-                className={`overflow-hidden ${(inView) ? 'opacity-100 max-w-full' : 'opacity-0 max-w-0'} transition-all ease-in-out duration-[1500ms]`}
+                className={`overflow-hidden ${(inView) ? 'opacity-100 max-w-full' : 'opacity-0 max-w-0'} transition-all ease-in-out duration-[2000ms]`}
             >
                 {children}
             </div>
@@ -33,7 +33,7 @@ const OpenDown = ({children}: FadeProps) => (
         {({ inView, ref }) => (
             <div
                 ref={ref}
-                className={`overflow-hidden ${(inView) ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'} transition-all ease-in-out duration-1000`}
+                className={`overflow-hidden ${(inView) ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'} transition-all ease-in-out delay-75 duration-[2000ms]`}
             >
                 {children}
             </div>
