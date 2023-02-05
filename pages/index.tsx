@@ -14,18 +14,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=''>
-        <Parallax pages={3}>
+        <Parallax pages={4}>
           <ParallaxLayer offset={0} sticky={{ start:0, end:0.2 }} speed={0.5}>
             <Hero />
           </ParallaxLayer>
-          <ParallaxLayer sticky={{ start: 1, end: 2.5 }} speed={0.5} >
-            <Card h1={cardData[0].h1} h2={cardData[0].h2} bg={cardData[0].bg} />
+          <ParallaxLayer sticky={{ start: 1, end: 4 }} speed={0.5} >
+            <Card link='/innovation' h1={cardData[0].h1} h2={cardData[0].h2} bg={cardData[0].bg} />
           </ParallaxLayer>
-          <ParallaxLayer sticky={{ start: 1.54, end: 2.5 }} speed={0.5} >
-            <Card h1={cardData[1].h1} h2={cardData[1].h2} bg={cardData[1].bg} />
+          <ParallaxLayer sticky={{ start: 2.1, end: 4 }} speed={0.5} >
+            <Card link='/sustainability' h1={cardData[1].h1} h2={cardData[1].h2} bg={cardData[1].bg} />
           </ParallaxLayer>
-          <ParallaxLayer sticky={{ start: 2.08, end: 2.5 }} speed={0.5} >
-            <Card h1={cardData[2].h1} h2={cardData[2].h2} bg={cardData[2].bg} />
+          <ParallaxLayer sticky={{ start: 3.2, end: 4 }} speed={0.5} >
+            <Card link='/performance' h1={cardData[2].h1} h2={cardData[2].h2} bg={cardData[2].bg} />
             <Footer/>
           </ParallaxLayer>
         </Parallax>
