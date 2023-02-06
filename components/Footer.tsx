@@ -24,14 +24,14 @@ const FadeIn = ({ children }: FadeProps) => (
 const Footer = () => {
   return (
     <div className="bg-[#161616] w-full h-full">
-      <div className='page-container z-0 relative'>
+      <div className='page-container justify-start z-0 relative'>
         {/* Header */}
         {/* Sub text */}
         <FadeIn>
-          <span className="text-white flex flex-col items-start w-full p-5 h-60 md:h-72">
+          <div className="text-white flex flex-col items-start w-full p-5 h-44 md:h-72">
             <h1 className="text-base md:text-2xl font-formulaWide my-2 md:my-4 lg:text-3xl">Audi Enters Formula 1 </h1>
             <h2 className="text-xs md:text-lg lg:text-xl font-formulaRegular my-2">Audi enters the premier class of motorsport. From 2026, the premium brand will compete in the FIA Formula 1 World Championship with a specially developed power unit.</h2>
-          </span>
+          </div>
         </FadeIn>
         {/* img */}
         <div className="h-60 md:h-80 lg:h-[430px] w-full flex items-center justify-center relative overflow-hidden">
