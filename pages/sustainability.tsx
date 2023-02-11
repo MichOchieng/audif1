@@ -57,7 +57,7 @@ export default function Sustainability() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full lg:w-1/2 md:h-80 h-96 overflow-hidden relative">
+                            <div ref={ref} className="flex items-center mx-auto w-full lg:w-1/2 md:h-80 h-96 overflow-hidden relative min-h-fit">
                                 <p className={`font-formulaRegular w-full p-text md:text-lg md:text-center lg:text-start whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                 The key to getting involved is the world&apos;s most popular racing series is the clear plan to become more sustainable and cost-efficient. The new technical rules, which will apply from 2026, focus on greater electrification and advanced sustainable fuel. In addition to the existing cap on costs for teams, a cost cap for power unit manufacturers will be introduced in 2023. In addition, Formula 1 has set itself the ambitious goal of being a carbon-neutral racing series by 2030.
                                 </p>
@@ -73,7 +73,7 @@ export default function Sustainability() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-80 overflow-hidden relative">
+                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-80 overflow-hidden relative min-h-fit">
                                 <p className={`font-formulaRegular w-full p-text whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     Globally recognized, highly emotional, and technologically advanced, that&apos;s how Formula 1 has met Audi&apos;s exact requirements. The series holds races in all relevant markets of the brand. As a spectacular platform for the most demanding electrified racing cars in the world, it is of particular interest to car manufacturers. Audi is taking on the challenge of proving its “Vorsprung durch Technik” in this competitive environment.
                                 </p>
