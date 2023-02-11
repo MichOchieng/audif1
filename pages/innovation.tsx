@@ -56,7 +56,7 @@ export default function Innovation() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-60 overflow-hidden relative">
+                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-64 min-h-fit overflow-hidden relative">
                                 <p className={`font-formulaRegular w-full p-text md:text-lg whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     In view of the major technological leaps that the series is making towards sustainability in 2026, we can speak of a new Formula 1. Formula 1 is transforming, and Audi wants to actively support this journey. A close link between our Formula 1 project and AUDI AG&apos;s Technical Development department will enable synergies.
                                 </p>
@@ -65,7 +65,7 @@ export default function Innovation() {
                     </InView>
                 </div>
                 {/* block 2 */}
-                <div className="p-5">
+                <div className="p-5 min-h-fit">
                     {/* Text */}
                     <p className="font-formulaRegular p-text md:text-center md:my-5">
                         From 2026, the electric power output for the power units, consisting of an electric motor, battery, control electronics, and a combustion engine, will increase sharply compared to today&apos;s Formula 1 drive systems. The electric motor will then be nearly as powerful as the combustion engine, which has an output of about 400 kW (544 hp). The highly efficient 1.6-liter turbo engines run on advanced sustainable fuel, also a prerequisite for Audi&apos;s entry into the series.
