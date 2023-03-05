@@ -14,7 +14,7 @@ const FadeIn = ({ children }: FadeProps) => (
     {({ inView, ref }) => (
       <div
         ref={ref}
-        className={`overflow-hidden flex justify-start items-start ${(inView) ? 'opacity-100 ' : 'opacity-0 '} transition-all ease-in-out duration-[2000ms]`}
+        className={`overflow-hidden flex justify-start items-start ${(inView) ? 'opacity-100 ' : 'opacity-0 '} transition-all ease-in-out duration-[2000ms] min-h-fit`}
       >
         {children}
       </div>
@@ -23,18 +23,18 @@ const FadeIn = ({ children }: FadeProps) => (
 )
 const Footer = () => {
   return (
-    <div className="bg-[#161616] w-full h-full">
+    <div className="bg-[#161616] w-full h-fit min-h-screen">
       <div className='page-container justify-start z-0 relative'>
         {/* Header */}
         {/* Sub text */}
         <FadeIn>
-          <div className="text-white flex flex-col items-start w-full p-5 h-44 md:h-72">
+          <div className="text-white flex flex-col items-start w-full p-5 h-44 md:h-72 ">
             <h1 className="text-base md:text-2xl font-formulaWide my-2 md:my-4 lg:text-3xl">Audi Enters Formula 1 </h1>
             <h2 className="text-xs md:text-lg lg:text-xl font-formulaRegular my-2">Audi enters the premier class of motorsport. From 2026, the premium brand will compete in the FIA Formula 1 World Championship with a specially developed power unit.</h2>
           </div>
         </FadeIn>
         {/* img */}
-        <div className="h-60 md:h-80 lg:h-[430px] w-full flex items-center justify-center relative overflow-hidden">
+        <div className="h-60 md:h-80 lg:h-[430px] w-full flex items-center justify-center relative overflow-hidden ">
           <Image
             className={`object-cover`}
             src={img}
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         
         {/* Sponsors grid */}
-        <div className="text-white flex flex-col items-start w-full px-5">
+        <div className="text-white flex flex-col items-start w-full px-5 h-0 lg:min-h-fit">
           <FadeIn>
             <h1 className="text-base font-formulaWide md:my-2 lg:text-xl">Our Sponsors</h1>
           </FadeIn>

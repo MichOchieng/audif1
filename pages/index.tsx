@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
       <main className=''>
-        <Parallax pages={6}>
+        <Parallax pages={5}>
           <ParallaxLayer offset={0} sticky={{ start: 0, end: 0.2 }} speed={0.5}>
             <Hero />
           </ParallaxLayer>
@@ -33,10 +33,9 @@ export default function Home() {
           <ParallaxLayer sticky={{ start: 3.2, end: 4 }} speed={0.5} >
             <Card link='/performance' h1={cardData[2].h1} h2={cardData[2].h2} bg={cardData[2].bg} />
           </ParallaxLayer>
-          <ParallaxLayer offset={5} factor={1} speed={0.5} >
+          {/* <ParallaxLayer offset={5} speed={0.5} >
             <Footer />
-          </ParallaxLayer>
-
+          </ParallaxLayer> */}
         </Parallax>
       </main>
     </>
