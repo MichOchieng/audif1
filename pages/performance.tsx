@@ -52,7 +52,7 @@ export default function Performance() {
                 <div className="flex flex-col items-center md:flex-row w-full p-5 md:p-0 md:mb-10">
                     {/* Tile */}
                     <div className='flex flex-col items-center justify-center md:my-5 w-full md:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed md:mr-5'>
-                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/mercPU.mp4" />
+                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/mercPU.mp4" poster='/thumbnails/mercPUThumbnail.jpg'/>
                     </div>
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
@@ -78,7 +78,7 @@ export default function Performance() {
                         )}
                     </InView>
                     <div className='flex flex-col items-center justify-center md:my-5 w-full md:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed md:mr-5'>
-                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/mguclip7.mp4" />
+                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/mguclip7.mp4" poster='/thumbnails/mguclip7Thumbnail.jpg'/>
                     </div>
                 </div>
                 {/* block 3 */}

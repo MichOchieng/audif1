@@ -52,7 +52,7 @@ export default function Sustainability() {
                 <div className="flex flex-col items-center lg:flex-row-reverse w-full p-5 md:p-0 lg:mb-24 ">
                     {/* Tile */}
                     <div className='flex flex-col items-center justify-center w-full lg:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed lg:ml-5'>
-                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/audif1.mp4"/>
+                        <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/audif1.mp4" poster='/thumbnails/audif1SusThumbnail.jpg'/>
                     </div>
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
