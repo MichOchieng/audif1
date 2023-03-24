@@ -56,8 +56,8 @@ export default function Innovation() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-64 min-h-fit overflow-hidden relative">
-                                <p className={`font-formulaRegular w-full p-text md:text-lg whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-64 min-h-fit relative">
+                                <p className={`font-formulaRegular w-full p-text md:text-base md:text-lg whitespace-wrap absolute ${inView ? '-right-5 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     In view of the major technological leaps that the series is making towards sustainability in 2026, we can speak of a new Formula 1. Formula 1 is transforming, and Audi wants to actively support this journey. A close link between our Formula 1 project and AUDI AG&apos;s Technical Development department will enable synergies.
                                 </p>
                             </div>

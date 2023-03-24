@@ -57,8 +57,8 @@ export default function Performance() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto min-h-fit w-full my-5 md:w-1/2 h-96 overflow-hidden relative">
-                                <p className={`font-formulaRegular w-full p-text whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                            <div ref={ref} className="flex items-center mx-auto min-h-fit w-full my-5 md:w-1/2 h-96  relative">
+                                <p className={`font-formulaRegular w-full p-text md:text-[14px] whitespace-wrap absolute ${inView ? '-right-5 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     The power unit will be built at Audi Sport&apos;s state-of-the-art Competence Center Motorsport in Neuburg an der Donau, not far from AUDI AG&apos;s company headquarters in Ingolstadt. “For the development and manufacture of the Formula 1 power train, we will build on the valuable expertise of our motorsport employees, continue to invest in our motorsports center, and also recruit highly specialized professionals,” says Audi Sport Managing Director Julius Seebach, who organized the entry into Formula 1 as part of Audi&apos;s realignment of motorsport.
                                 </p>
                             </div>
@@ -71,7 +71,7 @@ export default function Performance() {
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
                             <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 h-96 overflow-hidden relative">
-                                <p className={`font-formulaRegular w-full p-text whitespace-wrap absolute min-h-fit ${inView ? 'left-0 opacity-100' : 'left-[400px] opacity-0'} transition-all duration-1000`}>
+                                <p className={`font-formulaRegular w-full p-text md:text-[14px] whitespace-wrap absolute min-h-fit ${inView ? 'left-0 opacity-100' : 'left-[400px] opacity-0'} transition-all duration-1000`}>
                                     In Neuburg there are already test benches for F1 engine testing as well as for electric motor and battery testing. Additional necessary preparations are currently being made in terms of personnel, buildings, and technical infrastructure, with everything essential to be in place by the end of the year. A separate company was recently founded for the power unit project as a wholly owned subsidiary of Audi Sport.
                                 </p>
                             </div>

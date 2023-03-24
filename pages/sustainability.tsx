@@ -49,16 +49,16 @@ export default function Sustainability() {
                     <h1 className="font-formulaWide md:text-xl lg:text-3xl md:my-5">Motorsport is an integral part of Audi&apos;s DNA</h1>
                 </div>
                 {/* Block 1 */}
-                <div className="flex flex-col items-center lg:flex-row-reverse w-full p-5 md:p-0 lg:mb-24 ">
+                <div className="flex flex-col items-center lg:flex-row-reverse w-full p-5 md:p-0 lg:mb-24">
                     {/* Tile */}
-                    <div className='flex flex-col items-center justify-center w-full lg:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed lg:ml-5'>
+                    <div className='flex flex-col items-center justify-center w-full lg:w-1/2 md:h-96 h-72 border-t-8 border-r-8 border-[#D81919] rounded-tr-3xl rounded-bl-3xl text-white overflow-hidden z-10 smoothed lg:ml-5 bg-black'>
                         <video loop autoPlay playsInline muted className='h-full object-cover' src="https://d2uism5v0u1o2x.cloudfront.net/audif1.mp4" poster='/thumbnails/audif1SusThumbnail.jpg'/>
                     </div>
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full lg:w-1/2 md:h-80 h-96 overflow-hidden relative min-h-fit">
-                                <p className={`font-formulaRegular w-full p-text md:text-lg md:text-center lg:text-start whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                            <div ref={ref} className="flex items-center mx-auto w-full lg:w-1/2 md:h-[400px] h-96 overflow-hidden relative min-h-fit">
+                                <p className={`font-formulaRegular w-full p-text md:text-base md:text-center lg:text-start whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                 The key to getting involved is the world&apos;s most popular racing series is the clear plan to become more sustainable and cost-efficient. The new technical rules, which will apply from 2026, focus on greater electrification and advanced sustainable fuel. In addition to the existing cap on costs for teams, a cost cap for power unit manufacturers will be introduced in 2023. In addition, Formula 1 has set itself the ambitious goal of being a carbon-neutral racing series by 2030.
                                 </p>
                             </div>
@@ -73,8 +73,8 @@ export default function Sustainability() {
                     {/* Text */}
                     <InView threshold={0.25} triggerOnce>
                         {({ inView, ref }) => (
-                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-80 overflow-hidden relative min-h-fit">
-                                <p className={`font-formulaRegular w-full p-text whitespace-wrap absolute ${inView ? 'right-0 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
+                            <div ref={ref} className="flex items-center mx-auto w-full my-5 md:w-1/2 md:h-96 h-80 relative min-h-fit">
+                                <p className={`font-formulaRegular w-full p-text md:text-base whitespace-wrap absolute ${inView ? '-right-5 opacity-100' : 'right-[400px] opacity-0'} transition-all duration-1000`}>
                                     Globally recognized, highly emotional, and technologically advanced, that&apos;s how Formula 1 has met Audi&apos;s exact requirements. The series holds races in all relevant markets of the brand. As a spectacular platform for the most demanding electrified racing cars in the world, it is of particular interest to car manufacturers. Audi is taking on the challenge of proving its “Vorsprung durch Technik” in this competitive environment.
                                 </p>
                             </div>
